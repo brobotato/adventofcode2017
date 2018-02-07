@@ -45,5 +45,6 @@ for i in instructions:
         leaves += i[3:]
         leaves_dict[i[0]] = i[3:]
 discs = [x[0] for x in instructions]
-print([x for x in discs if x not in leaves])
-print(validate_weight('eugwuhl'))
+z = [x for x in discs if x not in leaves][0]
+print(z)
+print(validate_weight(z))
